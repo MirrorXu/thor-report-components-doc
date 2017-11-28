@@ -151,13 +151,28 @@
 
 - HTML 结构：
 ````html
+<div class="imgs_single">
 
+    <img src="{{ 图片相对路径 }}" alt="{{ 图片title }}"  title="{{ 图片title }}">
+    
+    <p class="img_title">{{ 图片title }}</p>
+    
+    <p class="annotation-title"> {{ 注的title }} </p>
+    <ul class="annotation-content">
+        <li> {{ 注的内容 }}</li>
+    </ul>
+    
+</div>
 
 ````
 
-CSS 样式：
+- CSS 样式：
 ```css
-    
+
+
+    .img_single{
+        ...
+    }   
   
 
 ```
@@ -167,23 +182,58 @@ CSS 样式：
 - HTML 结构：
 ````html
 
+<div class="imgs_more">
+
+    <div class='imgsBox'>
+          <div class='swiper-container gallery-top'>
+              <div class='swiper-wrapper'>
+                  <img class='swiper-slide' src='{{ 图片路径 }}'>
+              </div>
+              <div class='swiper-button-next swiper-button-white'></div>
+              <div class='swiper-button-prev swiper-button-white'></div>
+          </div>
+          <div class='swiper-container gallery-thumbs '>
+              <div class='swiper-wrapper'>
+                  <img class='swiper-slide' src='{{ 图片路径 }}'>
+              </div>
+          </div>
+    </div>
+    
+    
+    <p class="img_title">{{ 图片title }}</p>
+         
+    <div class="annotation">
+        <p class="annotation-title"> {{ 注的title }} </p>
+        <ul class="annotation-content">
+            <li> {{ 一条注的内容 }} </li>
+        </ul>
+    </div>
+    
+    
+</div>
 
 ````
 
-CSS 样式：
+- CSS 样式：
+
 ```css
     
-  
+    .imgs_more{
+        
+    
+    }
+
 
 ```
 
 
-## 非测序结果表格展示（需上传表格）
+## 结果表格展示
 
 - HTML 结构：
 ````html
 
  <div class="table-component">
+ 
       <p class="table-title"> {{ 表格标题 }}</p>
 
       <table class="table table-hover">
@@ -204,7 +254,7 @@ CSS 样式：
 
 ````
 
-CSS 样式：
+- CSS 样式：
 ```css
     
     .table{
@@ -216,45 +266,40 @@ CSS 样式：
 ```
 
 
+## 下载组件
 
+- html结构
 
-
-## 测序结果表格展示（无需上传）
-
-- HTML 结构：
-````html
-
- <div class="table-component">
-      <p class="table-title"> {{ 表格标题 }}</p>
-
-      <table class="table table-hover">
-
-          <tr>
-              <td > {{  表格内容 }}</td>
-          </tr>
-
-      </table>
-      <p class="table-lost"> {{ 表格没有内容时的提示 }} </p>
-
-      <p class="annotation-title"> {{ 注的title }} </p>
-
-      <ul class="annotation-content">
-          <li> {{ 注的内容 }}</li>
-      </ul>
-</div>
-
-````
-
-CSS 样式：
-```css
+```html
     
-    .table{
+      <div class="load_box">
         
+             <select class="select_box">
+                 <option value="{{ 路径 }}">{{ 路径 }}</option>
+             </select>
+             
+             <button class="load_btn">点击下载</button>
+        </div>
+        
+```
+
+
+
+- css 样式
+
+```css
+
+    .load_box{
+    
         ...
-        
+    
     }
 
+
+
 ```
+
+
 
 
 

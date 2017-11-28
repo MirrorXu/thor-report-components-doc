@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>component - loadSource </title>
+
+    <!--引入公用基础样式表-->
+    <link rel="stylesheet" href="../common/css/base.css">
+
+
+
+    <!--组件样式表    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="content">
+
+    <h1> 下载组件demo</h1>
+    <hr>
+    <br>
+
+    <div class="load_box">
+        <select class="select_box">
+            <option value="1700254_N.base.pdf"> 1700254_N.base.pdf </option>
+            <option value="1700254_N.base.png"> 1700254_N.base.png </option>
+            <option value="1700254_N.quality.pdf"> 1700254_N.quality.pdf </option>
+            <option value="1700254_N.quality.png"> 1700254_N.quality.png </option>
+        </select>
+        <button class="load_btn">点击下载</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="load_box">
+        <select class="select_box">
+            <option value="1700254_N.base.pdf"> 1700254_N.base.pdf </option>
+            <option value="1700254_N.base.png"> 1700254_N.base.png </option>
+            <option value="1700254_N.quality.pdf"> 1700254_N.quality.pdf </option>
+            <option value="1700254_N.quality.png"> 1700254_N.quality.png </option>
+        </select>
+        <button class="load_btn">点击下载</button>
+    </div>
+
+</div>
+
+
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script>
+$(function () {
+    $('.load_btn').on( 'click' , function ( e ) {
+        console.log( e  );
+	    console.log($(this).parent().find('.select_box').val());
+
+	    var path = $(this).parent().find('.select_box').val()
+
+	    location.href = './files/'+path
+    })
+})
+
+</script>
+</body>
+</html>

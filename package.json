@@ -1,0 +1,26 @@
+{
+  "name": "thor-report-components-doc",
+  "version": "1.0.0",
+  "description": "- HTML 结构：\r ```html",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirrorXu/thor-report-components-doc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MirrorXu/thor-report-components-doc/issues"
+  },
+  "homepage": "https://github.com/MirrorXu/thor-report-components-doc#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
