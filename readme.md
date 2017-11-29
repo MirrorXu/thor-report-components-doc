@@ -244,12 +244,15 @@
 
       </table>
       <p class="table-lost"> {{ 表格没有内容时的提示 }} </p>
-
-      <p class="annotation-title"> {{ 注的title }} </p>
-
-      <ul class="annotation-content">
-          <li> {{ 注的内容 }}</li>
-      </ul>
+        
+      <div class="annotation" >
+            <p class="annotation-title"> {{ 注的title }} </p>
+        
+            <ul class="annotation-content">
+                <li> {{ 注的内容 }}</li>
+            </ul>
+      </div>  
+      
 </div>
 
 ````
