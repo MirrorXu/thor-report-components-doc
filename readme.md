@@ -184,17 +184,17 @@
 
 <div class="imgs_more">
 
-    <div class='imgsBox'>
-          <div class='swiper-container gallery-top'>
-              <div class='swiper-wrapper'>
-                  <img class='swiper-slide' src='{{ 图片路径 }}'>
+    <div class="imgsBox">
+          <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="{{ 图片路径 }}">
               </div>
-              <div class='swiper-button-next swiper-button-white'></div>
-              <div class='swiper-button-prev swiper-button-white'></div>
+              <div class="swiper-button-next swiper-button-white"></div>
+              <div class="swiper-button-prev swiper-button-white"></div>
           </div>
-          <div class='swiper-container gallery-thumbs '>
-              <div class='swiper-wrapper'>
-                  <img class='swiper-slide' src='{{ 图片路径 }}'>
+          <div class="swiper-container gallery-thumbs ">
+              <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="{{ 图片路径 }}">
               </div>
           </div>
     </div>
