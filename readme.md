@@ -276,6 +276,8 @@
 ```html
     
       <div class="load_box">
+      			
+      	     <p class="load_box_info">{{下载}}</p>
         
              <select class="select_box">
                  <option value="{{ 路径 }}">{{ 路径 }}</option>
